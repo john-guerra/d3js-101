@@ -95,10 +95,10 @@
   float: left;
 }
 .reveal #handsOn div.target {
+  margin-left: 20px;
   width: 25%;
   float: left;
   font: 10px sans-serif;
-  margin: 0;
 }
 .reveal #handsOn div.target rect {
   fill: #4682b4;
