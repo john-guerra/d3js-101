@@ -27,12 +27,15 @@
           <h2>Outline</h2>
           <ol>
             <li>What is Infovis?</li>
-            <li>How D3 Works</li>
-            <li>Types of data</li>
-            <li>Hands-On</li>
+            <li>Types of Visualization</li>
+            <li>Infovis Basics</li>
+            <li>Hands-On with D3.js</li>
           </ol>
         </section>
-        <section>
+        <section id="whatIsInfoVis">
+          <section>
+            <h2>What is Information Visualization?</h2>
+          </section>
           <section>
             <h2>Data</h2>
             <ul>
@@ -165,7 +168,10 @@
             <h3>Information Visualization</h3><img src="images/infovis_examples.png">
           </section>
         </section>
-        <section id="visualizationMantra">
+        <section id="basics">
+          <section>
+            <h2>Infovis Basics</h2>
+          </section>
           <section>
             <h2>Visualization Mantra</h2>
             <ul>
@@ -181,40 +187,40 @@
             <h2>Perception Preference</h2><img src="images/munzner_preference.png" height="400px">
             <p class="small">Taken from:<a href="http://www.cs.ubc.ca/labs/imager/tr/2009/VisChapter/akp-vischapter.pdf" target="_blank">Tamara Munzner Book Chapter</a></p>
           </section>
-        </section>
-        <section id="dataTypes">
-          <section>
-            <h2>Data Types</h2>
-            <table class="small">
-              <tr>
-                <td><strong>1-D Linear</strong></td>
-                <td>Document Lens, SeeSoft, Info Mural</td>
-              </tr>
-              <tr>
-                <td><strong> 2-D Map</strong></td>
-                <td>GIS, ArcView, PageMaker, Medical imagery</td>
-              </tr>
-              <tr>
-                <td><strong> 3-D World</strong></td>
-                <td>CAD, Medical, Molecules, Architecture</td>
-              </tr>
-              <tr>
-                <td><strong> Multi-Var</strong></td>
-                <td>Spotfire, Tableau, GGobi, TableLens, ParCoords,</td>
-              </tr>
-              <tr>
-                <td><strong> Temporal</strong></td>
-                <td>LifeLines, TimeSearcher, Palantir, DataMontage, LifeFlow</td>
-              </tr>
-              <tr>
-                <td><strong> Tree</strong></td>
-                <td>Cone/Cam/Hyperbolic, SpaceTree, Treemap, Treeversity</td>
-              </tr>
-              <tr>
-                <td><strong> Network</strong></td>
-                <td>Gephi, NodeXL, Sigmajs</td>
-              </tr>
-            </table>
+          <section id="dataTypes">
+            <section>
+              <h2>Data Types</h2>
+              <table class="small">
+                <tr>
+                  <td><strong>1-D Linear</strong></td>
+                  <td>Document Lens, SeeSoft, Info Mural</td>
+                </tr>
+                <tr>
+                  <td><strong> 2-D Map</strong></td>
+                  <td>GIS, ArcView, PageMaker, Medical imagery</td>
+                </tr>
+                <tr>
+                  <td><strong> 3-D World</strong></td>
+                  <td>CAD, Medical, Molecules, Architecture</td>
+                </tr>
+                <tr>
+                  <td><strong> Multi-Var</strong></td>
+                  <td>Spotfire, Tableau, GGobi, TableLens, ParCoords,</td>
+                </tr>
+                <tr>
+                  <td><strong> Temporal</strong></td>
+                  <td>LifeLines, TimeSearcher, Palantir, DataMontage, LifeFlow</td>
+                </tr>
+                <tr>
+                  <td><strong> Tree</strong></td>
+                  <td>Cone/Cam/Hyperbolic, SpaceTree, Treemap, Treeversity</td>
+                </tr>
+                <tr>
+                  <td><strong> Network</strong></td>
+                  <td>Gephi, NodeXL, Sigmajs</td>
+                </tr>
+              </table>
+            </section>
           </section>
         </section>
         <section id="handsOn">
@@ -1493,8 +1499,8 @@ d3.json("https://api.flickr.com/services/rest/?method=flickr.interestingness.get
         history: true,
         center: true,
         rollingLinks: true,
-        transition: "slide",
-        width: "90%",
+        transition: "convex",
+        //- width: "90%",
         //- height: 1.0,
         dependencies: [
           // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/

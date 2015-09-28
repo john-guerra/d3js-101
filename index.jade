@@ -33,10 +33,12 @@ html
           h2 Outline
           ol
             li What is Infovis?
-            li How D3 Works
-            li Types of data
-            li Hands-On
-        section
+            li Types of Visualization
+            li Infovis Basics
+            li Hands-On with D3.js
+        section#whatIsInfoVis
+          section
+            h2 What is Information Visualization?
           section
             h2 Data
             ul
@@ -165,7 +167,9 @@ html
             h3 Information Visualization
             img(src="images/infovis_examples.png")
 
-        section#visualizationMantra
+        section#basics
+          section
+            h2 Infovis Basics
           section
             h2 Visualization Mantra
             ul
@@ -181,31 +185,31 @@ html
             p.small Taken from:
              a(href="http://www.cs.ubc.ca/labs/imager/tr/2009/VisChapter/akp-vischapter.pdf", target='_blank') Tamara Munzner Book Chapter
 
-        section#dataTypes
-          section
-            h2 Data Types
-            table.small
-              tr
-                td: strong 1-D Linear
-                td Document Lens, SeeSoft, Info Mural
-              tr
-                td: strong  2-D Map
-                td GIS, ArcView, PageMaker, Medical imagery
-              tr
-                td: strong  3-D World
-                td CAD, Medical, Molecules, Architecture
-              tr
-                td: strong  Multi-Var
-                td Spotfire, Tableau, GGobi, TableLens, ParCoords,
-              tr
-                td: strong  Temporal
-                td LifeLines, TimeSearcher, Palantir, DataMontage, LifeFlow
-              tr
-                td: strong  Tree
-                td Cone/Cam/Hyperbolic, SpaceTree, Treemap, Treeversity
-              tr
-                td: strong  Network
-                td Gephi, NodeXL, Sigmajs
+          section#dataTypes
+            section
+              h2 Data Types
+              table.small
+                tr
+                  td: strong 1-D Linear
+                  td Document Lens, SeeSoft, Info Mural
+                tr
+                  td: strong  2-D Map
+                  td GIS, ArcView, PageMaker, Medical imagery
+                tr
+                  td: strong  3-D World
+                  td CAD, Medical, Molecules, Architecture
+                tr
+                  td: strong  Multi-Var
+                  td Spotfire, Tableau, GGobi, TableLens, ParCoords,
+                tr
+                  td: strong  Temporal
+                  td LifeLines, TimeSearcher, Palantir, DataMontage, LifeFlow
+                tr
+                  td: strong  Tree
+                  td Cone/Cam/Hyperbolic, SpaceTree, Treemap, Treeversity
+                tr
+                  td: strong  Network
+                  td Gephi, NodeXL, Sigmajs
 
 
         section#handsOn
@@ -373,8 +377,8 @@ html
         history: true,
         center: true,
         rollingLinks: true,
-        transition: "slide",
-        width: "90%",
+        transition: "convex",
+        //- width: "90%",
         //- height: 1.0,
         dependencies: [
           // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
