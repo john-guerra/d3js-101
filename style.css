@@ -53,7 +53,7 @@
 }
 .reveal iframe.blocks {
   width: 960px;
-  height: 500px;
+  height: 450px;
   margin-left: -30px;
 }
 .reveal section img {
@@ -91,13 +91,56 @@
   font-size: 80%;
 }
 .reveal #handsOn pre {
-  width: 50%;
+  width: 70%;
   float: left;
 }
 .reveal #handsOn div.target {
-  width: 50%;
+  width: 25%;
   float: left;
+  font: 10px sans-serif;
+  margin: 0;
 }
-.reveal #handsOn .execute {
+.reveal #handsOn div.target rect {
+  fill: #4682b4;
+}
+.reveal #handsOn div.target circle {
+  opacity: 0.3;
+}
+.reveal #handsOn div.target path.line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+.reveal #handsOn div.target path.area {
+  fill: #e7e7e7;
+}
+.reveal #handsOn div.target .axis {
+  shape-rendering: crispEdges;
+}
+.reveal #handsOn div.target .x.axis line {
+  stroke: #bbb;
+}
+.reveal #handsOn div.target .x.axis .minor {
+  stroke-opacity: 0.5;
+}
+.reveal #handsOn div.target .x.axis path {
+  fill: none;
+}
+.reveal #handsOn div.target .y.axis line,
+.reveal #handsOn div.target .y.axis path {
+  fill: none;
+  stroke: #333;
+}
+.reveal #handsOn button.execute {
   clear: both;
+  font-size: 0.8em;
+}
+.reveal #handsOn div.followLink {
+  font-size: 0.6em;
+}
+.reveal .contactInfo {
+  text-align: right;
+}
+.reveal .contactInfo a {
+  font-size: 0.6em;
 }

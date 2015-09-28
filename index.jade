@@ -213,38 +213,137 @@ html
             h2 Hands-On Tutorial
             | Follow tutorial here 
             a(href="https://goo.gl/KZTCsG")  https://goo.gl/KZTCsG
+
           section
-            h2 Step 1: Selections
-            p: button.execute(onclick="runStep1()") Run
-            pre: code.
-                d3.select("#chart1")
-                    .append("p")
-                    .text("hola mundo");
+            h3 Step 1: Selections
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/1/") http://jsfiddle.net/duto_guerra/hpzm8cgr/1/
+            button.execute(onclick="runStep01()") Run
+            br
+            pre: code
+              include tutorial1/step01.js
+            div.target#chart01            
+            script
+              | function runStep01() {
+              include tutorial1/step01.js
+              | }
 
-                d3.selectAll("p")
-                    .style("font-size", "23pt");
-            div.target#chart1            
-            script.
-              function runStep1() {
-                console.log("hola");
-                d3.select("#chart1")
-                    .append("p")
-                    .text("hola mundo");
-
-                d3.selectAll("p")
-                    .style("font-size", "23pt");              
-              }
-            
           section
-            h2 Step 1: Selections
-            script.
-              d3.select("#chart")
-                  .append("p")
-                  .text("hola mundo");
+            h3 Step 2 Binding data 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/2/") http://jsfiddle.net/duto_guerra/hpzm8cgr/2/
+            button.execute(onclick="runStep02()") Run
+            br
+            pre: code
+              include tutorial1/step02.js
+            div.target#chart02            
+            script
+              | function runStep02() {
+              include tutorial1/step02.js
+              | }
 
-              d3.selectAll("p")
-                  .style("font-size", "23pt");
-
+          section
+            h3 Step 3 Remove and Update 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/3/") http://jsfiddle.net/duto_guerra/hpzm8cgr/3/
+            button.execute(onclick="runStep03()") Run
+            br
+            pre: code
+              include tutorial1/step03.js
+            div.target#chart03            
+            script
+              | function runStep03() {
+              include tutorial1/step03.js
+              | }
+          section
+            h3 Step 4 SVG 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/4/") http://jsfiddle.net/duto_guerra/hpzm8cgr/4/
+            button.execute(onclick="runStep04()") Run
+            br
+            pre: code
+              include tutorial1/step04.js
+            div.target#chart04            
+            script
+              | function runStep04() {
+              include tutorial1/step04.js
+              | }
+          section
+            h3 Step 5 Transitions 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/5/") http://jsfiddle.net/duto_guerra/hpzm8cgr/5/
+            button.execute(onclick="runStep05()") Run
+            br
+            pre: code
+              include tutorial1/step05.js
+            div.target#chart05            
+            script
+              | function runStep05() {
+              include tutorial1/step05.js
+              | }
+          section
+            h3 Step 6 Scales 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/7/") http://jsfiddle.net/duto_guerra/hpzm8cgr/7/
+            button.execute(onclick="runStep06()") Run
+            br
+            pre: code
+              include tutorial1/step06.js
+            div.target#chart06            
+            script
+              | function runStep06() {
+              include tutorial1/step06.js
+              | }
+          section
+            h3 Step 7 Axis 
+            div.followLink: a(href="http://jsfiddle.net/duto_guerra/hpzm8cgr/9/") http://jsfiddle.net/duto_guerra/hpzm8cgr/9/
+            button.execute(onclick="runStep07()") Run
+            br
+            pre: code
+              include tutorial1/step07.js
+            div.target#chart07            
+            script
+              | function runStep07() {
+              include tutorial1/step07.js
+              | }
+          section
+            h3 Step 8 Download data 
+            div.followLink: a(href="http://jsfiddle.net/hpzm8cgr/20/") http://jsfiddle.net/hpzm8cgr/20/
+            button.execute(onclick="runStep08()") Run
+            br
+            pre: code
+              include tutorial1/step08.js
+            div.target#chart08            
+            script
+              | function runStep08() {
+              include tutorial1/step08.js
+              | }
+          section
+            h3 Step 9 Events 
+            div.followLink: a(href="http://jsfiddle.net/hpzm8cgr/21/") http://jsfiddle.net/hpzm8cgr/21/
+            button.execute(onclick="runStep09()") Run
+            br
+            pre: code
+              include tutorial1/step09.js
+            div.target
+              div#chart09
+              img#image09
+            script
+              | function runStep09() {
+              include tutorial1/step09.js
+              | }
+          section
+            h3 Step 10 Extras 
+            div.followLink: a(href="http://jsfiddle.net/hpzm8cgr/22/") http://jsfiddle.net/hpzm8cgr/22/
+            button.execute(onclick="runStep10()") Run
+            br
+            pre: code
+              include tutorial1/step10.js
+            div.target
+              select(id="attrSelect")
+                option(value="count_views") views
+                option(value="count_faves") faves
+                option(value="count_comments") comments
+              div#chart10
+              img#image10
+            script
+              | function runStep10() {
+              include tutorial1/step10.js
+              | }
 
 
         section#resources
@@ -258,6 +357,11 @@ html
         section#end
           h1 Thank You
           h2 Questions?
+          div.contactInfo
+            p John Alexis Guerra Gómez
+            a(href="http://johnguerra.co") johnguerra.co
+            br
+            a(href="http://twitter/duto_guerra") @duto_guerra
 
     script(src='lib/js/head.min.js')
     script(src='lib/js/reveal.js')
@@ -270,7 +374,7 @@ html
         center: true,
         rollingLinks: true,
         transition: "convex",
-        //- width: "90%",
+        width: "90%",
         //- height: 1.0,
         dependencies: [
           // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/

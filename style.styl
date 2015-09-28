@@ -35,7 +35,7 @@ blue = #4682b4
       content ''
   iframe.blocks
     width 960px
-    height 500px
+    height 450px
     margin-left -30px
   section
     img
@@ -65,10 +65,43 @@ blue = #4682b4
     
   #handsOn
     pre
-      width: 50%
+      width: 70%
       float: left
     div.target
-      width: 50%
+      width: 25%
       float: left
+      font: 10px sans-serif
+      margin: 0
+      rect  
+        fill: steelblue
+      circle  
+        opacity: 0.3      
+      path.line
+        fill: none
+        stroke: #666
+        stroke-width: 1.5px
+      path.area
+        fill: #e7e7e7
+      .axis
+        shape-rendering: crispEdges
+      .x.axis line
+        stroke: #bbb
+      .x.axis .minor
+        stroke-opacity: .5
+      .x.axis path
+        fill: none
+      .y.axis line, .y.axis path
+        fill: none
+        stroke: #333      
     button.execute
       clear: both
+      font-size: 0.8em
+      
+    div.followLink
+      font-size: 0.6em
+      
+    
+  .contactInfo
+    text-align: right
+    a 
+      font-size: 0.6em
