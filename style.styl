@@ -66,9 +66,10 @@ blue = #4682b4
   #handsOn
     pre
       width: 70%
+      font-size: 0.5em
       float: left
     div.target
-      margin-left: 20px
+      margin: 20px
       width: 25%
       float: left
       font: 10px sans-serif
@@ -105,3 +106,40 @@ blue = #4682b4
     text-align: right
     a 
       font-size: 0.6em
+      
+  #munznerpreferencechart
+    color: white
+    font-size: 0.6em 
+    .line 
+      stroke: #4A90E2
+      stroke-width: 25
+      stroke-opacity: 0.30
+      fill: none
+    .box 
+      // text 
+      //   opacity: 0
+      rect 
+        fill-opacity: 0.75        
+    .box:hover text 
+      opacity: 1
+    .mainArea.selected 
+      .line.selected 
+        opacity: 0.9
+      .line 
+        opacity: 0.1
+      .box 
+        opacity: 0.1
+      .box.selected
+        opacity: 0.9
+    .box text 
+      pointer-events: none
+      font-size: 14pt
+    .axis path, .axis line
+      fill: none
+      /*stroke: #ccc*/
+      shape-rendering: crispEdges
+    .y.axis line 
+      stroke: white
+    text 
+      font-size: 22pt
+

@@ -92,10 +92,11 @@
 }
 .reveal #handsOn pre {
   width: 70%;
+  font-size: 0.5em;
   float: left;
 }
 .reveal #handsOn div.target {
-  margin-left: 20px;
+  margin: 20px;
   width: 25%;
   float: left;
   font: 10px sans-serif;
@@ -143,4 +144,48 @@
 }
 .reveal .contactInfo a {
   font-size: 0.6em;
+}
+.reveal #munznerpreferencechart {
+  color: #fff;
+  font-size: 0.6em;
+}
+.reveal #munznerpreferencechart .line {
+  stroke: #4a90e2;
+  stroke-width: 25;
+  stroke-opacity: 0.3;
+  fill: none;
+}
+.reveal #munznerpreferencechart .box rect {
+  fill-opacity: 0.75;
+}
+.reveal #munznerpreferencechart .box:hover text {
+  opacity: 1;
+}
+.reveal #munznerpreferencechart .mainArea.selected .line.selected {
+  opacity: 0.9;
+}
+.reveal #munznerpreferencechart .mainArea.selected .line {
+  opacity: 0.1;
+}
+.reveal #munznerpreferencechart .mainArea.selected .box {
+  opacity: 0.1;
+}
+.reveal #munznerpreferencechart .mainArea.selected .box.selected {
+  opacity: 0.9;
+}
+.reveal #munznerpreferencechart .box text {
+  pointer-events: none;
+  font-size: 14pt;
+}
+.reveal #munznerpreferencechart .axis path,
+.reveal #munznerpreferencechart .axis line {
+  fill: none;
+/*stroke: #ccc*/
+  shape-rendering: crispEdges;
+}
+.reveal #munznerpreferencechart .y.axis line {
+  stroke: #fff;
+}
+.reveal #munznerpreferencechart text {
+  font-size: 22pt;
 }
